@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trirong", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../2.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #ababab;
+}
+.emotion-img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.text-display {
+  bottom: 0px;
+  right: 100px;
+  font-style: oblique;
+  color: navajowhite;
+  position: absolute;
+}
+button {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  right: 10px;
+}
+.emotion-emoji {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.right,
+.duration,
+.emotion-img {
+  position: absolute;
+}
+.right {
+  position: absolute;
+  height: 80%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  right: 0px;
+  bottom: 50px;
+  font-size: 15px;
+}
+
+.right button {
+  border: none;
+  height: 60px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  background: rgba(220, 235, 8, 0.1);
+}
+.right button:hover {
+  background: navajowhite;
+}
+#play {
+  background: navajowhite;
+}
+.duration {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  width: 28%;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background: navajowhite;
+  cursor: pointer;
+}
